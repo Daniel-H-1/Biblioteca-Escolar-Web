@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e)3**_2b%g!syuxe^u*lb3h4=0b+mh2p0sw43c4gqgwhpgm903
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = [*,'your-app-name.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['https://biblioteca-escolar-web.onrender.com', 'localhost', '127.0.0.1']
 if not DEBUG:
     ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 
